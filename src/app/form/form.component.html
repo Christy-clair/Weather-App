@@ -12,11 +12,11 @@
                 'haze': description.toUpperCase().includes('HAZE')
                 }"
                 >
-    <h1>Check Weather Before Travelling To A Beautiful Place</h1>
+    <h1>Weather Forecast</h1>
     <form (ngSubmit)='checkCity()'>
-        <input type="text" [(ngModel)] = 'city' [ngModelOptions]="{standalone: true}" class="input" placeholder="Enter the Destination">
+        <input type="text" [(ngModel)] = 'city' [ngModelOptions]="{standalone: true}" class="input" placeholder="City">
     </form>
-    <p class="cityName">City Name: {{city | uppercase}}</p>
+    <p class="cityName">{{city | uppercase}}</p>
     <div class="div1">
             <div>
                 <span class = "box">
